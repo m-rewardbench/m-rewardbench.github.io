@@ -96,7 +96,7 @@
               <div class="publication-links">
                     <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                  <a href="https://arxiv.org/pdf/2410.15522.pdf" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
@@ -141,7 +141,7 @@
 
               <!-- ArXiv abstract Link -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                <a href="https://arxiv.org/abs/2410.15522" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="ai ai-arxiv"></i>
@@ -183,25 +183,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Reward models (RMs) have driven the state-of-the-art performance of LLMs today by enabling the integration of human feedback into the language modeling process. However, RMs
-are primarily trained and evaluated in English,
-and their capabilities in multilingual settings
-remain largely understudied. In this work, we
-conduct a systematic evaluation of several reward models in multilingual settings. We approach 
-this by constructing the first multilingual reward benchmark, <span style="font-variant: small-caps;">M-RewardBench</span>,
-consisting of 2.87k preference instances for 23
-typologically diverse languages that tests chat,
-safety, reasoning, and translation capabilities
-of RMs. Our findings reveal a significant gap
-in RM performance between English and nonEnglish languages and that RMs can have 
-different preferences across languages. We also present several
-findings on how different multilingual aspects
-impact RM performance. Specifically, RMs
-perform better with better translation-quality
-text and in high-resource languages. We release
-<span style="font-variant: small-caps;">M-RewardBench</span> dataset and the codebase
-in this study to facilitate a better understanding
-of RM evaluation in multilingual settings.
+
+Reward models (RMs) have driven the state-of-the-art performance of LLMs today by enabling the integration of human feedback into the language modeling process. However, RMs are primarily trained and evaluated in English, and their capabilities in multilingual settings remain largely understudied. In this work, we conduct a systematic evaluation of several reward models in multilingual settings. We first construct the first-of-its-kind multilingual RM evaluation benchmark, 
+<span style="font-variant: small-caps;">M-RewardBench</span>, consisting of 2.87k preference instances for 23 typologically diverse languages, that tests the chat, safety, reasoning, and translation capabilities of RMs. We then rigorously evaluate a wide range of reward models on 
+<span style="font-variant: small-caps;">M-RewardBench</span>, offering fresh insights into their performance across diverse languages. We identify a significant gap in RMs' performances between English and non-English languages and show that RM preferences can change substantially from one language to another. We also present several findings on how different multilingual aspects impact RM performance. Specifically, we show that the performance of RMs is improved with improved translation quality. Similarly, we demonstrate that the models exhibit better performance for high-resource languages. We release 
+<span style="font-variant: small-caps;">M-RewardBench</span> dataset and the codebase in this study to facilitate a better understanding of RM evaluation in multilingual settings. 
           </p>
         </div>
       </div>
@@ -334,13 +320,14 @@ on our multilingual benchmark compared to their performance on the corresponding
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{c4ai_community_2024,
-        author       = {Srishti Gureja and Lester James V. Miranda and Shayekh Bin Islam and Rishabh Maheshwary and Drishti Sharma and Gusti Winata and Nathan Lambert and Sebastian Ruder and Sara Hooker and Marzieh Fadaee},
-        title        = { Multilingual RewardBench (Revision f6f96dc) },
-        year         = 2024,
-        url          = { https://huggingface.co/datasets/C4AI-Community/multilingual-reward-bench },
-        doi          = { 10.57967/hf/3030 },
-        publisher    = { Hugging Face }
+      <pre><code>@misc{gureja2024mrewardbenchevaluatingrewardmodels,
+          title={M-RewardBench: Evaluating Reward Models in Multilingual Settings}, 
+          author={Srishti Gureja and Lester James V. Miranda and Shayekh Bin Islam and Rishabh Maheshwary and Drishti Sharma and Gusti Winata and Nathan Lambert and Sebastian Ruder and Sara Hooker and Marzieh Fadaee},
+          year={2024},
+          eprint={2410.15522},
+          archivePrefix={arXiv},
+          primaryClass={cs.CL},
+          url={https://arxiv.org/abs/2410.15522}, 
     }</code></pre>
     </div>
 </section>
