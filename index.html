@@ -42,6 +42,31 @@
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
+  <style>
+        /* Base styling */
+        .img_fit {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Fit height on wider screens */
+        @media (min-aspect-ratio: 1/1) {
+            .img_fit {
+                height: 100vh;
+                width: auto;
+            }
+        }
+
+        /* Fit width on narrower screens */
+        @media (max-aspect-ratio: 1/1) {
+            .img_fit {
+                width: 100vw;
+                height: auto;
+            }
+        }
+    </style>
+  
   <script src="static/js/index.js"></script>
 </head>
 <body>
@@ -227,12 +252,8 @@ understanding of RM evaluation in multilingual settings.
       <!-- <div id="results-carousel" class="carousel results-carousel"> -->
        <div class="item"> 
         <!-- Your image here -->
-        <img src="static/images/eng_vs_m_gap.png" 
-          style=" height: 100vh; 
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          " 
+        <img src="static/images/eng_vs_m_gap.png"  
+          class="img_fit"
           alt="MY ALT TEXT"/>
         <!-- <h2 class="subtitle has-text-centered">
           Performance gap between RewardBench (English) and the average M-REWARDBENCH scores
@@ -243,33 +264,27 @@ on our multilingual benchmark compared to their performance on the corresponding
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/mrb_full.png"  style=" height: 100vh; 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        " alt="MY ALT TEXT"/>
+        <img src="static/images/mrb_full.png" 
+        class="img_fit"
+        alt="MY ALT TEXT"/>
         <!-- <h2 class="subtitle has-text-centered">
           Second image description.
         </h2> -->
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/maple_full.png"  style=" height: 100vh; 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        " alt="MY ALT TEXT"/>
+        <img src="static/images/maple_full.png"
+        class="img_fit"
+        alt="MY ALT TEXT"/>
         <!-- <h2 class="subtitle has-text-centered">
          Third image description.
        </h2> -->
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/inner_model_agreement.png"  style=" height: 100vh; 
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      " alt="MY ALT TEXT"/>
+      <img src="static/images/inner_model_agreement.png"
+      class="img_fit" 
+      alt="MY ALT TEXT"/>
       <!-- <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2> -->
