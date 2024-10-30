@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>M-RewardBench</title>
+  <title>M-RᴇᴡᴀʀᴅBᴇɴᴄʜ : Evaluating Reward Models in Multilingual Settings</title>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -118,7 +118,7 @@
 
               <!-- Github link -->
               <span class="link-block">
-                <a href="https://github.com/for-ai/aya_rm_multilingual" target="_blank"
+                <a href="https://github.com/for-ai/m-rewardbench" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
@@ -183,11 +183,34 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-
-Reward models (RMs) have driven the state-of-the-art performance of LLMs today by enabling the integration of human feedback into the language modeling process. However, RMs are primarily trained and evaluated in English, and their capabilities in multilingual settings remain largely understudied. In this work, we conduct a systematic evaluation of several reward models in multilingual settings. We first construct the first-of-its-kind multilingual RM evaluation benchmark, 
+<!-- Reward models (RMs) have driven the state-of-the-art performance of LLMs today by enabling the integration of human feedback into the language modeling process. However, RMs are primarily trained and evaluated in English, and their capabilities in multilingual settings remain largely understudied. In this work, we conduct a systematic evaluation of several reward models in multilingual settings. We first construct the first-of-its-kind multilingual RM evaluation benchmark, 
 <span style="font-variant: small-caps;">M-RewardBench</span>, consisting of 2.87k preference instances for 23 typologically diverse languages, that tests the chat, safety, reasoning, and translation capabilities of RMs. We then rigorously evaluate a wide range of reward models on 
 <span style="font-variant: small-caps;">M-RewardBench</span>, offering fresh insights into their performance across diverse languages. We identify a significant gap in RMs' performances between English and non-English languages and show that RM preferences can change substantially from one language to another. We also present several findings on how different multilingual aspects impact RM performance. Specifically, we show that the performance of RMs is improved with improved translation quality. Similarly, we demonstrate that the models exhibit better performance for high-resource languages. We release 
-<span style="font-variant: small-caps;">M-RewardBench</span> dataset and the codebase in this study to facilitate a better understanding of RM evaluation in multilingual settings. 
+<span style="font-variant: small-caps;">M-RewardBench</span> dataset and the codebase in this study to facilitate a better understanding of RM evaluation in multilingual settings.  -->
+Reward models (RMs) have driven the state-of-the-art performance of LLMs today by enabling
+the integration of human feedback into the language modeling process. However, RMs are
+primarily trained and evaluated in English, and their capabilities in multilingual settings remain
+largely understudied. In this work, we conduct a systematic evaluation of several 
+reward models in multilingual settings. We first construct
+the first-of-its-kind multilingual RM evaluation
+benchmark, <span style="font-variant: small-caps;">M-RewardBench</span>, consisting of 2.87k preference instances for 23 typologically
+diverse languages, that tests the chat, safety, reasoning, and translation capabilities of RMs.
+We then rigorously evaluate a wide range of reward models on <span style="font-variant: small-caps;">M-RewardBench</span>, offering 
+fresh insights into their performance across
+diverse languages. We identify a significant
+gap in RMs’ performances between English
+and non-English languages and show that RM
+preferences can change substantially from one
+language to another. We also present several
+findings on how different multilingual aspects
+impact RM performance. Specifically, we show
+that the performance of RMs is improved with
+improved translation quality. Similarly, we
+demonstrate that the models exhibit better performance for high-resource languages. 
+We release the <span style="font-variant: small-caps;">M-RewardBench</span> dataset and the
+codebase in this study to facilitate a better 
+understanding of RM evaluation in multilingual settings.
+
           </p>
         </div>
       </div>
@@ -202,9 +225,15 @@ Reward models (RMs) have driven the state-of-the-art performance of LLMs today b
   <div class="hero-body">
     <div class="container">
       <!-- <div id="results-carousel" class="carousel results-carousel"> -->
-       <div class="item" style="justify-content: center;"> 
+       <div class="item"> 
         <!-- Your image here -->
-        <img src="static/images/eng_vs_m_gap.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/eng_vs_m_gap.png" 
+          style=" height: 100vh; 
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          " 
+          alt="MY ALT TEXT"/>
         <!-- <h2 class="subtitle has-text-centered">
           Performance gap between RewardBench (English) and the average M-REWARDBENCH scores
 across 23 languages for various reward models (Pearson
@@ -214,21 +243,33 @@ on our multilingual benchmark compared to their performance on the corresponding
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/mrb_full.png" alt="MY ALT TEXT"/>
+        <img src="static/images/mrb_full.png"  style=" height: 100vh; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        " alt="MY ALT TEXT"/>
         <!-- <h2 class="subtitle has-text-centered">
           Second image description.
         </h2> -->
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/maple_full.png" alt="MY ALT TEXT"/>
+        <img src="static/images/maple_full.png"  style=" height: 100vh; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        " alt="MY ALT TEXT"/>
         <!-- <h2 class="subtitle has-text-centered">
          Third image description.
        </h2> -->
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/inner_model_agreement.png" alt="MY ALT TEXT"/>
+      <img src="static/images/inner_model_agreement.png"  style=" height: 100vh; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      " alt="MY ALT TEXT"/>
       <!-- <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2> -->
@@ -320,7 +361,7 @@ on our multilingual benchmark compared to their performance on the corresponding
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{gureja2024mrewardbenchevaluatingrewardmodels,
+      <pre><code>@misc{gureja2024mrewardbench,
           title={M-RewardBench: Evaluating Reward Models in Multilingual Settings}, 
           author={Srishti Gureja and Lester James V. Miranda and Shayekh Bin Islam and Rishabh Maheshwary and Drishti Sharma and Gusti Winata and Nathan Lambert and Sebastian Ruder and Sara Hooker and Marzieh Fadaee},
           year={2024},
